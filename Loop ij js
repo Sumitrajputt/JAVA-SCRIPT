@@ -1,0 +1,75 @@
+loop is use to execute a block of code repeatedly until a certain condition is met. There are several types of loops in JavaScript, including for loops, while loops, and do-while loops.
+types of loop in javascript
+
+for loop
+while loop
+do-while loop
+
+
+Example of a for loop that prints the numbers from 1 to 
+for ( let count =1; count <= 5; count++) {
+
+to calculate the sum of the first 10 natural numbers using a for loop
+let sum = 0;
+for (let i = 1; i<10; i++){
+    sum = sum + i;
+}
+console.log("sum =", sum);
+console.log("loop has bee ended");
+
+
+infinite loop is a loop that continues to execute indefinitely because the loop's terminating condition is never met. This can lead to a program becoming unresponsive or crashing if not handled properly. It's important to ensure that loops have a clear exit condition to prevent infinite loops.
+Example of an infinite loop using a while loop
+while (true) {
+    console.log("This loop will run forever!");
+}
+
+while loop in javascript
+that is used to execute a block of code as long as a specified condition is true. 
+The syntax of a while loop is as follows:
+while (condition) {
+    // code to be executed
+}    
+Example of a while loop that prints the numbers from 1 to 5
+let count = 1;
+while (count <= 5) {
+    console.log(count);
+    count++;
+}    
+Example of a while loop that calculates the factorial of a number
+let number = 5;
+let factorial = 1;
+while (number > 0) {
+    factorial *= number;
+    number--;
+}
+console.log("Factorial:", factorial);
+
+
+
+do while
+do-while loop is similar to a while loop, but it guarantees that the block of code will be executed at least once, even if the condition is false. The syntax of a do-while loop is as follows:
+do {
+    // code to be executed   
+} while (condition);
+Example of a do-while loop that prints the numbers from 1 to 5
+let count = 1;       
+do {
+
+    console.log(count);
+    count++;
+} while (count <= 5);
+
+Example of a do-while loop that calculates the factorial of a number
+let number = 5;
+let factorial = 1;
+do {
+    factorial *= number;
+    number--;
+} while (number > 0);
+console.log("Factorial:", factorial);
+
+
+
+
+
