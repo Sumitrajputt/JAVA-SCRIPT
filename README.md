@@ -1,2 +1,2 @@
-# js.hindi
-A code repo for java script by chai aur code youtube channel
+JS - JAVA SCRIPT 
+A repo of java script by Apna college.
