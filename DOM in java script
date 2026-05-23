@@ -247,3 +247,228 @@ JavaScript uses DOM to find and modify elements.
 # 12. Final Short Definition 📚
 
 > DOM (Document Object Model) is a tree-like structure created by the browser that allows JavaScript to access and manipulate HTML and CSS elements dynamically.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+| Type          | Purpose               |
+| ------------- | --------------------- |
+| Document DOM  | Access entire webpage |
+| Element DOM   | Access HTML elements  |
+| Attribute DOM | Access attributes     |
+| Event DOM     | Handle user actions   |
+
+---
+
+# 1. Document DOM 📄
+
+## Definition
+
+Document DOM represents the entire HTML document.
+
+It is the root object of the webpage.
+
+---
+
+## Uses ✅
+
+* Access webpage content
+* Find HTML elements
+* Change webpage dynamically
+
+---
+
+## Example 💻
+
+```html id="4ex65u"
+<h1 id="title">Hello</h1>
+```
+
+```javascript id="rv7tjm"
+document.getElementById("title").innerHTML = "Welcome";
+```
+
+---
+
+## Real-Time Example 🌍
+
+Changing website title dynamically.
+
+Example:
+
+* YouTube changing page title
+* Gmail updating notification count
+
+---
+
+# 2. Element DOM 🏷️
+
+## Definition
+
+Element DOM is used to access and manipulate specific HTML elements.
+
+---
+
+## Uses ✅
+
+* Change text
+* Modify CSS
+* Add/remove elements
+
+---
+
+## Example 💻
+
+```html id="qg5d4m"
+<p id="demo">Original Text</p>
+```
+
+```javascript id="ufk0zc"
+let para = document.getElementById("demo");
+para.style.color = "red";
+```
+
+---
+
+## Real-Time Example 🌍
+
+* Changing button color
+* Updating form data
+* Showing notifications
+
+---
+
+# 3. Attribute DOM ⚙️
+
+## Definition
+
+Attribute DOM is used to access or modify HTML attributes.
+
+Examples of attributes:
+
+* id
+* class
+* src
+* href
+
+---
+
+## Uses ✅
+
+* Change image source
+* Update links
+* Modify classes
+
+---
+
+## Example 💻
+
+```html id="c3xy26"
+<img id="img" src="old.jpg">
+```
+
+```javascript id="3m6kfc"
+document.getElementById("img").src = "new.jpg";
+```
+
+---
+
+## Real-Time Example 🌍
+
+* Profile picture update
+* Theme switching
+* Dynamic links
+
+---
+
+# 4. Event DOM 🖱️
+
+## Definition
+
+Event DOM handles user interactions/events.
+
+Examples:
+
+* click
+* mouseover
+* keypress
+* submit
+
+---
+
+## Uses ✅
+
+* Button click actions
+* Form validation
+* Interactive webpages
+
+---
+
+## Example 💻
+
+```html id="mf0v3u"
+<button onclick="show()">Click</button>
+```
+
+```javascript id="7ob10n"
+function show() {
+   alert("Button Clicked");
+}
+```
+
+---
+
+## Real-Time Example 🌍
+
+* Login form submit
+* Like button
+* Search bar interaction
+
+---
+
+# Important DOM Methods ⭐
+
+| Method                   | Purpose                       |
+| ------------------------ | ----------------------------- |
+| getElementById()         | Find element by id            |
+| getElementsByClassName() | Find by class                 |
+| getElementsByTagName()   | Find by tag                   |
+| querySelector()          | Select first matching element |
+| querySelectorAll()       | Select all matching elements  |
+
+---
+
+# DOM Manipulation Example 🔥
+
+```html id="9w2j4y"
+<h1 id="heading">Hello</h1>
+<button onclick="changeText()">Change</button>
+```
+
+```javascript id="4p9c5l"
+function changeText() {
+   document.getElementById("heading").innerHTML = "Welcome Sumit";
+}
+```
+
+---
+
